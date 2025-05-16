@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sarath Sanjay</title>
+    <link rel="icon" type="image/x-icon" href="/images/img3.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/2f0add8f28.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "emvjW3CuoDKQoqshj",
+      });
+   })();
+</script>
+  </head>
+
+  <body class="m-0">
+    <header class="bg-dark fixed-top w-100">
+      <div class="container-fluid">
+        <div class="row text-white align-items-center">
+          <div class="col-md-6 col-9 p-3 px-5">
+            <h2>Sarath Sanjay</h2>
+          </div>
+          <div class="col-md-6 col-3">
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#contact">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="home" class="p-4 mt-5 pt-5">
+      <div class="container m-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="/images/img3.jpg" class="rounded img-fluid" alt="Sarath Sanjay" />
+          </div>
+          <div class="col-md-6">
+            <h2>Hello, it's me<br /><strong class="text-success">Sarath Sanjay</strong></h2>
+            <p>
+              A software developer with a keen interest in building efficient and scalable web applications.
+              I enjoy staying updated with new technologies and solving real-world problems through code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h1 class="text-center mb-4">Skills</h1>
+    <div class="row text-center">
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fa-brands fa-html5 fa-3x text-danger mb-2"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fa-brands fa-css3-alt fa-3x text-primary mb-2"></i>
+        <p>CSS3</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fa-brands fa-js fa-3x text-warning mb-2"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <i class="fa-brands fa-bootstrap fa-3x text-purple mb-2"></i>
+        <p>Bootstrap</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="text-center m-5">
+      <div class="container">
+        <h1>Projects</h1>
+        <div>
+          <h3>Ease My Trip (Clone)</h3>
+          <p>
+            This project is a static front-page clone of the EaseMyTrip website, designed to practice and showcase my
+            skills in HTML and CSS. It includes a visually appealing layout with a header, booking interface
+            (non-functional), promotional banners, and footer. The focus was on replicating the look and feel of a real
+            travel site with clean design and responsive structure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center mb-5">
+      <div class="container">
+        <h1 class="mb-4">Get In Touch</h1>
+        <form onsubmit="mail(); return false;">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" id="name" class="form-control" placeholder="First name" />
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" class="form-control" placeholder="Email" />
+            </div>
+            <div class="col-12">
+              <textarea id="message" class="form-control" rows="4" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </div>
+          </div>
+        </form>        
+      </div>
+    </section>
+    <!-- Bootstrap JS -->
+    
+    <script src="/script.js"></script>
+  </body>
+</html>
